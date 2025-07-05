@@ -1,7 +1,7 @@
 # BitcoinArt
 
 **An open-source solution giving Bitcoin artists, makers, and independent creators their own customizable, self-hosted website complete with e-commerce and auction tools to showcase and sell handmade, Bitcoin-inspired artworks directly to collectors. Because an independently hosted site is the only place you fully control your content and presentation and the only place immune to deletion or censorship, it becomes your forever home on the web.**
-
+![image](https://github.com/user-attachments/assets/57f6c1dc-3b35-4bfa-a229-512b137d788c)
 ---
 
 ## Table of Contents
@@ -27,6 +27,8 @@
 ## About
 
 Hi, I'm Aksana (aka 5Ksana), a Bitcoin artist and fashion designer from Poland. Since 2017, I've been creating physical Bitcoin-inspired art, and I have over 22 years of experience as a professional tailor. Learn more about me here: [https://buybitart.com/about](https://buybitart.com/about)
+
+![image](https://github.com/user-attachments/assets/473fd674-02d5-48c0-a5a6-84f1cb21fc76)
 
 We recently launched [buybitart.com](https://buybitart.com), a simple, open-source site for Bitcoin artists, as well as for independent creators:
 
@@ -206,3 +208,5 @@ Distributed under the **MIT License**. See [LICENSE](https://github.com/buybitar
 - Website: [buybitart.com](https://buybitart.com)  
 - GitHub: [buybitart/bitcoinart](https://github.com/buybitart/bitcoinart)  
 - Email: [contact@buybitart.com](mailto:contact@buybitart.com)
+
+If you'd like to support the project, please visit the [donation page](https://buybitart.com/support) 

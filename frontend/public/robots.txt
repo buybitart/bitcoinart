@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Disallow: /adm
+Disallow: /payment
+Disallow: /pending
+Disallow: /success
+Disallow: /thankyou
+Disallow: /error
+Disallow: /privacy
+Disallow: /policies
+Disallow: /404
+
+Sitemap: https://buybitart.com/sitemap.xml

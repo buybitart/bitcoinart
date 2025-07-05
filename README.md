@@ -48,8 +48,8 @@ My husband Aliaksandr [GitHub](https://github.com/Berichicko), a few close frien
 - **Auction System**  
   Place bids, view bid history, receive notifications.  
 - **Payment Integration**  
-  - BTC via [BTCPay Server](https://btcpayserver.org)  
-  - USDT & credit cards via [Stripe](https://stripe.com)  
+  - BTC (Bitcoin network - BTC) or USDT  (Tron network -TRC20) via [BTCPay Server](https://btcpayserver.org)  
+  - USD & credit cards via [Stripe](https://stripe.com)  
 - **Responsive Design**  
   Works seamlessly on desktop and mobile.  
 - **Static Content**  

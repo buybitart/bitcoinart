@@ -157,7 +157,18 @@ Ensure real credentials are secured and never committed to Git. `.gitignore` exc
 2. **Frontend** → interacts with **Backend** (Node.js, Express)  
 3. **Backend** → reads/writes to **PostgreSQL**, and routes payments to **BTCPay Server** (BTC) & **Stripe** (USDT & cards)
 
-FOR EXAMPLE
+For example
+
+The main ideas are:
+
+- **Low cost**
+- **Modular (you can add or remove parts easily)**
+- **Full control (you control all content and payments)**
+
+
+
+The goal is to give artists and creators an independent, customizable website that they host themselves.
+This way, there is no risk of censorship.
 
 ![buybitart](https://github.com/user-attachments/assets/32b47a56-8b2e-4ffd-955e-23e29520db7b)
 

@@ -155,7 +155,11 @@ Ensure real credentials are secured and never committed to Git. `.gitignore` exc
 
 1. **User Browser** → requests UI from **Frontend** (React, Vite)  
 2. **Frontend** → interacts with **Backend** (Node.js, Express)  
-3. **Backend** → reads/writes to **PostgreSQL**, and routes payments to **BTCPay Server** (BTC) & **Stripe** (USDT & cards)  
+3. **Backend** → reads/writes to **PostgreSQL**, and routes payments to **BTCPay Server** (BTC) & **Stripe** (USDT & cards)
+
+FOR EXAMPLE
+
+![buybitart](https://github.com/user-attachments/assets/32b47a56-8b2e-4ffd-955e-23e29520db7b)
 
 ---
 

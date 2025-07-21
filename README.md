@@ -187,7 +187,11 @@ We align with UNESCO’s definition of **artistic freedom** the right “to imag
 - **Accessibility Enhancements**  
   Improve compliance with WCAG guidelines: keyboard navigation, screen-reader labels, color contrast, and assistive technologies support.  
 - **User Experience (UX) Improvements**  
-  Refine user flows, optimize performance, enhance mobile and low-bandwidth experiences, and gather user feedback for iterative design.  
+  Refine user flows, optimize performance, enhance mobile and low-bandwidth experiences, and gather user feedback for iterative design. 
+- **Login with NOSTR**  
+  Censorship resistant open source communication protocol that is incredibly  
+- **New CMS panel with KeystoneJS**  
+  Self-hosted, open-source headless CMS 
 
 ---
 

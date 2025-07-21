@@ -1,6 +1,6 @@
 import React from "react";
 import { IoCheckmarkSharp } from "react-icons/io5";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SuccessPopup = () => {
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ const SuccessPopup = () => {
     navigate(window.location.pathname, { replace: true });
 
   return (
-    <div className="w-full max-w-[383px] h-full max-h-[260px] rounded-[32px] p-8 flex flex-col gap-10 bg-[#171717]">
+    <section className="w-full max-w-[383px] h-full max-h-[260px] rounded-[32px] p-8 flex flex-col gap-10 bg-[#171717]">
       <div className="w-full h-auto flex flex-col gap-3 items-center relative">
         <button
           onClick={handleClick}
@@ -59,7 +59,7 @@ const SuccessPopup = () => {
           Cancel
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

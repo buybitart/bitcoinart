@@ -41,7 +41,7 @@ const CartItem = ({ data, cart, setCart, index, popupClose }) => {
           },
           {
             delay: index * 0.15,
-          }
+          },
         );
         safeToRemove();
       };
@@ -57,7 +57,7 @@ const CartItem = ({ data, cart, setCart, index, popupClose }) => {
           },
           {
             delay: index * 0.15,
-          }
+          },
         );
       };
 
@@ -74,9 +74,9 @@ const CartItem = ({ data, cart, setCart, index, popupClose }) => {
       <div className="w-full h-auto flex sm:gap-8 gap-2">
         <Link to={`/shop/${data.hash}`} onClick={popupClose}>
           <ImageLoader
-          containerStyles={`w-full h-full`}
+            containerStyles={`w-full h-full`}
             src={data.images[0].optimized}
-            alt=""
+            alt="image"
             className={`sm:w-full w-auto sm:max-w-[225px] sm:h-full ${
               isSmallMobile
                 ? "h-[120px] max-w-[100px]"

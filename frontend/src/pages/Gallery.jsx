@@ -20,7 +20,7 @@ const Gallery = () => {
       setLoading(true);
       try {
         const galleryRes = await axios.get(
-          `${import.meta.env.VITE_DB_LINK}/api/gallery-products`
+          `${import.meta.env.VITE_DB_LINK}/api/gallery-products`,
         );
         setGallery(galleryRes.data || []);
       } catch (error) {
@@ -107,19 +107,19 @@ const Gallery = () => {
         type="page"
         page="gallery"
       />
-      <div className="w-[100vw] h-full" id="galleryPage">
+      <section className="w-[100vw] h-full" id="galleryPage">
         <div className="w-full xl:h-[100svh] h-full relative px-[16px] xl:px-[6.25rem] pb-14 flex flex-col overflow-x-hidden">
           <div className="w-full h-auto relative flex justify-between items-center mt-[calc(52px+50px)] xl:mt-[calc(65px+50px)] ">
-            <h2 className="font-main font-[600] sm:text-4xl text-3xl leading-[100%] uppercase">
+            <h1 className="font-main font-[600] sm:text-4xl text-3xl leading-[100%] uppercase">
               {settings.sections[0].title}
-            </h2>
+            </h1>
             <div className="flex items-center gap-1.5 text-[#FCCB00]">
               <span
                 className={`font-main ${
                   isSmallMobile ? "text-xs" : "text-sm"
                 } sm:text-lg pointer-events-none xl:max-w-none max-w-[400px] text-right select-none font-[300]`}
                 dangerouslySetInnerHTML={createMarkup(
-                  settings.sections[0].description
+                  settings.sections[0].description,
                 )}
               />
 
@@ -150,7 +150,7 @@ const Gallery = () => {
         </div>
 
         <Footer />
-      </div>
+      </section>
     </>
   );
 };

@@ -63,11 +63,11 @@ const Exhibitions = () => {
     return (
       <>
         <SEO
-          title={`Exhibitions - Exclusive Art Shows by 5KSANA`}
-          description={`Explore the latest exhibitions by 5KSANA, featuring unique crypto-inspired artwork. Discover new collections, attend art events, and immerse yourself in the world of innovative design and fashion.`}
-          name={`Exhibitions - Exclusive Art Shows by 5KSANA`}
+          title="Exhibitions - Exclusive Art Shows by 5KSANA"
+          description="Explore 5KSANA’s latest exhibitions featuring unique crypto-inspired art. Discover new collections, events, and dive into innovative design and fashion."
+          name="Exhibitions - Exclusive Art Shows by 5KSANA"
           type="page"
-          page={`exhibitions`}
+          page="exhibitions"
         />
         <div>Loading Exhibitions...</div>
       </>
@@ -76,11 +76,11 @@ const Exhibitions = () => {
   return (
     <>
       <SEO
-        title={`Exhibitions - Exclusive Art Shows by 5KSANA`}
-        description={`Explore the latest exhibitions by 5KSANA, featuring unique crypto-inspired artwork. Discover new collections, attend art events, and immerse yourself in the world of innovative design and fashion.`}
-        name={`Exhibitions - Exclusive Art Shows by 5KSANA`}
+        title="Exhibitions - Exclusive Art Shows by 5KSANA"
+        description="Explore 5KSANA’s latest exhibitions featuring unique crypto-inspired art. Discover new collections, events, and dive into innovative design and fashion."
+        name="Exhibitions - Exclusive Art Shows by 5KSANA"
         type="page"
-        page={`exhibitions`}
+        page="exhibitions"
       />
       <div className="w-[100vw] h-full">
         <div className="w-full h-full relative px-[16px] xl:px-[6.25rem] pb-20 top-[calc(52px+50px)] xl:top-[calc(65px+50px)] mx-auto">

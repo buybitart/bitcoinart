@@ -1,14 +1,230 @@
-User-agent: *
-Allow: /
+User-Agent: BLEXBot
+Disallow: /
 
+User-Agent: SemrushBot
+Disallow: /
+
+User-Agent: SemrushBot-BA
+Disallow: /
+
+User-Agent: DataForSeoBot
+Disallow: /
+
+User-Agent: DotBot
+Disallow: /
+
+User-Agent: AhrefsBot
+Disallow: /
+
+User-Agent: Barkrowler
+Disallow: /
+
+User-Agent: Yandex
+Disallow: /
+
+User-Agent: MJ12bot
+Disallow: /
+
+User-Agent: SerendeputyBot
+Disallow: /
+
+User-Agent: netEstate
+Disallow: /
+
+User-Agent: SeopultContentAnalyzer
+Disallow: /
+
+User-Agent: CCBot
+Disallow: /
+
+User-Agent: MegaIndex
+Disallow: /
+
+User-Agent: serpstatbot
+Disallow: /
+
+User-Agent: ZoominfoBot
+Disallow: /
+
+User-Agent: YaK
+Disallow: /
+
+User-Agent: NetcraftSurveyAgent
+Disallow: /
+
+User-Agent: weborama-fetcher
+Disallow: /
+
+User-Agent: SeekportBot
+Disallow: /
+
+User-Agent: SEOkicks
+Disallow: /
+
+User-Agent: AwarioBot
+Disallow: /
+
+User-Agent: AwarioRssBot
+Disallow: /
+
+User-Agent: AwarioSmartBot
+Disallow: /
+
+User-Agent: keys-so-bot
+Disallow: /
+
+User-Agent: GetIntent Crawler
+Disallow: /
+
+User-Agent: Go-http-client
+Disallow: /
+
+User-Agent: go-resty
+Disallow: /
+
+User-Agent: node-fetch
+Disallow: /
+
+User-Agent: okhttp
+Disallow: /
+
+User-Agent: Apache-HttpClient
+Disallow: /
+
+User-Agent: axios
+Disallow: /
+
+User-Agent: Scrapy
+Disallow: /
+
+User-Agent: python-requests
+Disallow: /
+
+User-Agent: fasthttp
+Disallow: /
+
+User-Agent: lua-resty-http
+Disallow: /
+
+User-Agent: ngx_lua
+Disallow: /
+
+User-Agent: Arquivo-web-crawler
+Disallow: /
+
+User-Agent: Nmap Scripting Engine
+Disallow: /
+
+User-Agent: BW/1.1
+Disallow: /
+
+User-Agent: Riddler
+Disallow: /
+
+User-Agent: Screaming Frog SEO Spider
+Disallow: /
+
+User-Agent: PR-CY.RU
+Disallow: /
+
+User-Agent: wp_is_mobile
+Disallow: /
+
+User-Agent: ALittle Client
+Disallow: /
+
+User-Agent: Linux Mozilla
+Disallow: /
+
+User-Agent: Expanse
+Disallow: /
+
+User-Agent: BackupLand
+Disallow: /
+
+User-Agent: Hello, world
+Disallow: /
+
+User-Agent: Nuclei
+Disallow: /
+
+User-Agent: WellKnownBot
+Disallow: /
+
+User-Agent: AcademicBotRTU
+Disallow: /
+
+User-Agent: Bot-v6
+Disallow: /
+
+User-Agent: Hello, world
+Disallow: /
+
+User-Agent: KOCMOHABT
+Disallow: /
+
+User-Agent: Turnitin
+Disallow: /
+
+User-Agent: Amazonbot
+Disallow: /
+
+User-Agent: GoogleOther
+Disallow: /
+
+User-Agent: GPTBot
+Disallow: /
+
+User-Agent: OAI-SearchBot
+Disallow: /
+
+User-Agent: ChatGPT-User
+Disallow: /
+
+User-Agent: PerplexityBot
+Disallow: /
+
+User-Agent: ClaudeBot
+Disallow: /
+
+User-Agent: SBIntuitionsBot
+Disallow: /
+
+User-Agent: *
 Disallow: /adm
+Disallow: /users/
+Disallow: /stores/
 Disallow: /payment
 Disallow: /pending
 Disallow: /success
 Disallow: /thankyou
 Disallow: /error
-Disallow: /privacy
-Disallow: /policies
+Disallow: *?*s=*
+Disallow: *?*color=*
+Disallow: *?*size=*
 Disallow: /404
+Disallow: /docs
+Disallow: /login
+Disallow: /auction
+Disallow: /assets
+Disallow: /feed
+Disallow: /vendor
+Disallow: /api
+Disallow: /faq
+Disallow: /donate
+
+Allow: /shop/
+Allow: /gallery/
+Allow: /about
+Allow: /proof
+Allow: /exhibitions
+Allow: /support
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.jpeg$
+Allow: /*.gif$
 
 Sitemap: https://buybitart.com/sitemap.xml
+Sitemap: https://buybitart.com/sitemap_shop.xml

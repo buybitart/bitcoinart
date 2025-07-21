@@ -28,7 +28,7 @@ const Policies = () => {
       <Helmet>
         <title>Policies</title>
       </Helmet>
-      <div className="w-[100vw] h-full">
+      <section className="w-[100vw] h-full">
         <div className="w-full h-full relative px-[16px] xl:px-[6.25rem] sm:pb-20 pb-30 top-[calc(52px+50px)] xl:top-[calc(65px+50px)] max-w-[1300px] mx-auto">
           <div className="w-full h-auto flex flex-col lg:gap-8 sm:gap-6 gap-4 font-main relative">
             <div className="flex flex-col gap-3 justify-center items-center">
@@ -70,7 +70,7 @@ const Policies = () => {
                   <p
                     className="lg:font-[400] font-[300] text-base mt-4"
                     dangerouslySetInnerHTML={createMarkup(
-                      sections.find((item) => item.id === section)?.description
+                      sections.find((item) => item.id === section)?.description,
                     )}
                   />
                 </motion.div>
@@ -78,7 +78,7 @@ const Policies = () => {
             </AnimatePresence>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

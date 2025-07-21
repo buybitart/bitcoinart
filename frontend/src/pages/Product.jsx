@@ -48,7 +48,7 @@ const Product = ({ cart, setCart }) => {
 
   const isAddedToCart = useMemo(
     () => Boolean(cart.find((item) => item?.hash === data?.hash)),
-    [cart, data?.hash]
+    [cart, data?.hash],
   );
 
   const handleOpenOriginal = (index) => setOriginalOpen({ state: true, index });
@@ -71,7 +71,7 @@ const Product = ({ cart, setCart }) => {
         ? prevCart.map((item) =>
             item.hash === data.hash
               ? { ...item, quantity: item.quantity + 1 }
-              : item
+              : item,
           )
         : [...prevCart, { ...data, quantity: 1 }];
     });
@@ -87,7 +87,7 @@ const Product = ({ cart, setCart }) => {
 
         setData(productResponse.data);
         setRelatedData(
-          relatedResponse.data.filter((item) => item.hash !== hash)
+          relatedResponse.data.filter((item) => item.hash !== hash),
         );
       } catch (error) {
         console.error("Failed to fetch product details:", error);
@@ -109,7 +109,7 @@ const Product = ({ cart, setCart }) => {
     ) {
       setIsSticky(
         sliderContainerRef.current.offsetHeight >
-          textContainerRef.current.offsetHeight * 1.3
+          textContainerRef.current.offsetHeight * 1.3,
       );
     }
   }, [isBigLaptop, data]);
@@ -123,9 +123,9 @@ const Product = ({ cart, setCart }) => {
     return (
       <>
         <SEO
-          title={`Product - Unique Crypto Art & Fashion by 5KSANA`}
-          description={`Discover Product, a one-of-a-kind creation by 5KSANA. This Bitcoin-inspired design embodies innovation and artistic excellence. Perfect for crypto enthusiasts and art collectors alike. Shop now and own a piece of blockchain-inspired creativity!`}
-          name={`Product - Unique Crypto Art & Fashion by 5KSANA`}
+          title="Product - Unique Crypto Art & Fashion by 5KSANA"
+          description="Discover Product by 5KSANA—Bitcoin-inspired art blending innovation and style. Perfect for crypto lovers and collectors. Shop unique blockchain designs."
+          name="Product - Unique Crypto Art & Fashion by 5KSANA"
           type="page"
           page={`shop/${hash}`}
         />
@@ -139,7 +139,7 @@ const Product = ({ cart, setCart }) => {
     <>
       <SEO
         title={`${data.title} - Unique Crypto Art & Fashion by 5KSANA`}
-        description={`Discover ${data.title}, a one-of-a-kind creation by 5KSANA. This Bitcoin-inspired design embodies innovation and artistic excellence. Perfect for crypto enthusiasts and art collectors alike. Shop now and own a piece of blockchain-inspired creativity!`}
+        description={`Discover ${data.title} by 5KSANA—Bitcoin-inspired art blending innovation and style. Perfect for crypto lovers and collectors. Shop unique blockchain designs.`}
         name={`${data.title} - Unique Crypto Art & Fashion by 5KSANA`}
         type="page"
         page={`shop/${hash}`}
@@ -162,9 +162,9 @@ const Product = ({ cart, setCart }) => {
                 })}
                 ref={textContainerRef}
               >
-                <h2 className="uppercase font-main font-[600] 2xl:text-6xl sm:text-5xl text-3xl text-white">
+                <h1 className="uppercase font-main font-[600] 2xl:text-6xl sm:text-5xl text-3xl text-white">
                   {data.title}
-                </h2>
+                </h1>
                 <div className="w-full h-auto flex flex-col gap-6 relative">
                   <div
                     className="w-full h-auto flex flex-col gap-4 font-main font-[400] tracking-wide 2xl:text-lg text-base text-[#CFCFCF] 2xl:max-w-[90%] text-pretty pt-0.5 pb-4"

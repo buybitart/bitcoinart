@@ -60,7 +60,7 @@ export const SubTitleAnimation = ({ children, className, type }) => {
           }`}
         >
           {word}
-        </motion.span>
+        </motion.span>,
       );
     });
 
@@ -123,7 +123,7 @@ export const ImageAnimation = ({ images, type }) => {
         >
           <img
             src={image}
-            alt=""
+            alt="image"
             className={`${
               isDesktop
                 ? "w-[90px] h-[90px]"
@@ -134,7 +134,7 @@ export const ImageAnimation = ({ images, type }) => {
             width={90}
             height={90}
           />
-        </motion.div>
+        </motion.div>,
       );
     });
 

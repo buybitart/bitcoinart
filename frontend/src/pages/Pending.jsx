@@ -13,7 +13,7 @@ const Pending = () => {
     const checkPaymentStatus = async () => {
       try {
         const response = await axios.get(
-          `${apiUrl}/payment/status/${searchParams.get("orderId")}`
+          `${apiUrl}/payment/status/${searchParams.get("orderId")}`,
         );
 
         if (response.data.status === "completed")
@@ -35,7 +35,7 @@ const Pending = () => {
       <Helmet>
         <title>Pending Payment...</title>
       </Helmet>
-      <div className="w-[100vw] h-full">
+      <section className="w-[100vw] h-full">
         <div className="w-full h-[100svh] relative px-[16px] xl:px-[6.25rem] flex items-center justify-center">
           <div className="flex flex-col w-full max-w-[1000px] bg-[#ffffff1A] h-auto justify-center items-center font-main z-[1] relative p-[50px] rounded-3xl text-center">
             <LuLoaderCircle className="text-white opacity-60 animate-spin mb-2 text-[40px]" />
@@ -67,7 +67,7 @@ const Pending = () => {
             </button>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

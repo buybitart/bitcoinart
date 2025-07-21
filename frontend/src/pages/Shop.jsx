@@ -71,7 +71,7 @@ const Shop = ({ setCart, cart }) => {
         (!priceFilters.max || price <= priceFilters.max)
       );
     },
-    [priceFilters, priceType]
+    [priceFilters, priceType],
   );
 
   const onInputChange = (event) => {
@@ -112,7 +112,7 @@ const Shop = ({ setCart, cart }) => {
     const updateItemsPerPage = () => {
       const width = window.innerWidth;
       setItemsPerPage(
-        width >= 1536 ? 12 : width >= 1280 ? 9 : width >= 640 ? 10 : 8
+        width >= 1536 ? 12 : width >= 1280 ? 9 : width >= 640 ? 10 : 8,
       );
     };
     window.addEventListener("resize", updateItemsPerPage);
@@ -157,7 +157,7 @@ const Shop = ({ setCart, cart }) => {
     const getSettings = async () => {
       try {
         const { data } = await axios.get(
-          `${import.meta.env.VITE_DB_LINK}/api/settings/shop`
+          `${import.meta.env.VITE_DB_LINK}/api/settings/shop`,
         );
         setSettings(data);
       } catch (error) {
@@ -172,7 +172,7 @@ const Shop = ({ setCart, cart }) => {
       <>
         <SEO
           title="5KSANA | Shop Bitcoin Art & Crypto-Themed Creations & Auction"
-          description="Discover the exclusive 5KSANA shop featuring Bitcoin-inspired paintings, auction, crypto-themed sculptures, and unique embroidered designs. Explore our curated collection of innovative art and fashion that celebrates blockchain culture. Shop now and own a piece of crypto creativity!"
+          description="Shop Bitcoin-inspired art & fashion by 5KSANA—paintings, sculptures, embroidery & auctions. Celebrate crypto culture with unique, curated pieces."
           name="5KSANA | Shop Bitcoin Art & Crypto-Themed Creations & Auction"
           type="page"
           page="shop"
@@ -185,12 +185,12 @@ const Shop = ({ setCart, cart }) => {
     <>
       <SEO
         title="5KSANA | Shop Bitcoin Art & Crypto-Themed Creations & Auction"
-        description="Discover the exclusive 5KSANA shop featuring Bitcoin-inspired paintings, auction, crypto-themed sculptures, and unique embroidered designs. Explore our curated collection of innovative art and fashion that celebrates blockchain culture. Shop now and own a piece of crypto creativity!"
+        description="Shop Bitcoin-inspired art & fashion by 5KSANA—paintings, sculptures, embroidery & auctions. Celebrate crypto culture with unique, curated pieces."
         name="5KSANA | Shop Bitcoin Art & Crypto-Themed Creations & Auction"
         type="page"
         page="shop"
       />
-      <div className="w-[100vw] h-full contShop">
+      <section className="w-[100vw] h-full contShop">
         <div className="w-full h-full mt-[72px] px-[16px] pb-4 flex flex-col justify-end xl:px-[6.25rem] overflow-x-hidden">
           <div className="w-full flex justify-between items-center gap-2">
             <div className="w-full sm:h-[75px] h-[70px] relative border-[1px] rounded-xl border-[#ffffff10] bg-gradient-to-br from-[#ffffff10] to-[#ffffff05] flex justify-center items-center">
@@ -222,9 +222,9 @@ const Shop = ({ setCart, cart }) => {
         </div>
         <div className="w-full h-full sticky top-[30px] px-[16px] xl:top-[52px] pb-4 flex flex-col justify-end xl:px-[6.25rem] overflow-x-hidden z-[2]">
           <div className="w-full h-auto relative flex justify-between items-end webkitBgBlurIos16 bg-gradient-to-t from-[#000000]/75 to-[#000] to-[85%] py-5 border-b-[1px] border-[#FFFFFF1A]">
-            <h2 className="font-main font-[600] text-4xl leading-[100%] uppercase">
+            <h1 className="font-main font-[600] text-4xl leading-[100%] uppercase">
               {settings.sections[0].title}
-            </h2>
+            </h1>
 
             <div className="flex w-auto h-full items-center gap-6">
               <button
@@ -339,7 +339,7 @@ const Shop = ({ setCart, cart }) => {
               <div className="min-h-[560px] w-full justify-center items-center flex flex-col gap-2">
                 <img
                   src="/empty-box.svg"
-                  alt=""
+                  alt="empty-box"
                   className="w-full h-full max-h-[170px] sm:max-h-[225px] object-contain invert opacity-40"
                 />
                 <p className="font-main sm:text-xl text-lg font-[300] opacity-40">
@@ -350,7 +350,7 @@ const Shop = ({ setCart, cart }) => {
               <div className="relative h-full flex flex-col w-full justify-center items-center gap-2">
                 <img
                   src="/empty-box.svg"
-                  alt=""
+                  alt="empty-box"
                   className="w-full h-full max-h-[170px] sm:max-h-[225px] object-contain invert opacity-40"
                 />
                 <p className="font-main sm:text-xl text-lg font-[300] opacity-40">
@@ -362,7 +362,7 @@ const Shop = ({ setCart, cart }) => {
         </Paginator>
 
         <Footer />
-      </div>
+      </section>
     </>
   );
 };

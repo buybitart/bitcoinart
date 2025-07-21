@@ -19,14 +19,14 @@ const SupportMe = () => {
   return (
     <>
       <SEO
-        title={`Support Me - Empower the Creative Vision of 5KSANA`}
-        description={`Join me on my artistic journey and support the creation of unique crypto-inspired art. Your contribution helps bring blockchain culture to life through exclusive Bitcoin-themed creations. Be part of this innovative art movement and make a difference today!`}
-        name={`Support Me - Empower the Creative Vision of 5KSANA`}
+        title="Support Me - Empower the Creative Vision of 5KSANA"
+        description="Support my crypto art journey! Help create exclusive Bitcoin-inspired pieces and bring blockchain culture to life. Join the movement and make a difference."
+        name="Support Me - Empower the Creative Vision of 5KSANA"
         type="page"
-        page={`support`}
+        page="support"
       />
 
-      <div className="w-[100vw] h-full">
+      <section className="w-[100vw] h-full">
         <div className="w-full h-full relative px-[16px] xl:px-[6.25rem] sm:pb-20 pb-30 top-[calc(52px+50px)] xl:top-[calc(65px+50px)] max-w-[1300px] mx-auto sm:mb-28 mb-20">
           <div className="w-full h-auto flex flex-col lg:gap-8 sm:gap-6 gap-4 font-main relative">
             <div className="flex flex-col gap-3 justify-center items-center">
@@ -77,7 +77,7 @@ const SupportMe = () => {
           </div>
         </div>
         <Footer />
-      </div>
+      </section>
     </>
   );
 };

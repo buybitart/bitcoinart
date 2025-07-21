@@ -69,7 +69,7 @@ const Payment = ({ cart }) => {
     if (cart.length && btcPrice) {
       if (typePay === "card") {
         setTotalPrice(
-          cart.reduce((a, b) => a + btcPrice * b.price * b.quantity, 0)
+          cart.reduce((a, b) => a + btcPrice * b.price * b.quantity, 0),
         );
       } else if (typePay === "crypto") {
         setTotalPrice(cart.reduce((a, b) => a + b.price * b.quantity, 0));
@@ -93,7 +93,7 @@ const Payment = ({ cart }) => {
           pending: `Loading...`,
           success: `Redirecting...`,
           error: `Failed to pay :/`,
-        }
+        },
       );
 
       if (response.data.checkoutLink)
@@ -114,7 +114,7 @@ const Payment = ({ cart }) => {
           pending: `Loading...`,
           success: `Redirecting...`,
           error: `Failed to pay :/`,
-        }
+        },
       );
 
       if (response.data.checkoutLink)
@@ -140,7 +140,7 @@ const Payment = ({ cart }) => {
           pending: "Confirming payment...",
           success: "Payment confirmed!",
           error: "Failed to confirm payment :/",
-        }
+        },
       );
 
       if (response.data.message === "Payment confirmed!")
@@ -165,7 +165,7 @@ const Payment = ({ cart }) => {
         __v,
         createdAt,
         ...rest
-      }) => rest
+      }) => rest,
     );
 
     const fullData = {
@@ -195,7 +195,7 @@ const Payment = ({ cart }) => {
       <Helmet>
         <title>Payment | 5KSANA</title>
       </Helmet>
-      <div className="w-[100vw] h-full">
+      <section className="w-[100vw] h-full">
         <div className="w-full h-full relative mt-[calc(52px+40px)] xl:mt-[calc(65px+40px)] px-[16px] xl:px-[6.25rem] pb-14">
           <form
             onSubmit={handleSubmit(onSubmit)}
@@ -429,7 +429,7 @@ const Payment = ({ cart }) => {
                       <StripePay
                         totalPrice={cart.reduce(
                           (a, b) => a + btcPrice * b.price * b.quantity,
-                          0
+                          0,
                         )}
                         email={userStore.user.email}
                         userId={userStore.user.id || userStore.user._id}
@@ -449,8 +449,8 @@ const Payment = ({ cart }) => {
                                 __v,
                                 createdAt,
                                 ...rest
-                              }) => rest
-                            )
+                              }) => rest,
+                            ),
                           )
                         }
                       />
@@ -557,7 +557,7 @@ const Payment = ({ cart }) => {
         </div>
 
         <Footer />
-      </div>
+      </section>
     </>
   );
 };

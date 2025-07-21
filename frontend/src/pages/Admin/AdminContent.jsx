@@ -37,7 +37,7 @@ const ImageGrid = ({
                 onImageChange(
                   newImage,
                   index,
-                  currentCategory === "exhibitions" ? sectionIndex : null
+                  currentCategory === "exhibitions" ? sectionIndex : null,
                 )
               }
               data={images}
@@ -132,13 +132,13 @@ const renderSectionContent = (
   sectionIndex,
   control,
   onImageChange,
-  currentCategory
+  currentCategory,
 ) => {
   const contentMap = {
     description: () => (
       <Controller
         name={`${getCategoryKey(
-          currentCategory
+          currentCategory,
         )}.sections[${sectionIndex}].${key}`}
         control={control}
         defaultValue={value}
@@ -163,23 +163,23 @@ const renderSectionContent = (
               onInputChange(
                 { target: { name: "list", value: updatedList } },
                 sectionIndex,
-                listIndex
+                listIndex,
               );
             }}
             onAddItem={() => {
               const updatedList = [...value, ""];
               onInputChange(
                 { target: { name: "list", value: updatedList } },
-                sectionIndex
+                sectionIndex,
               );
             }}
             onRemoveItem={(listIndex) => {
               const updatedList = value.filter(
-                (_, index) => index !== listIndex
+                (_, index) => index !== listIndex,
               );
               onInputChange(
                 { target: { name: "list", value: updatedList } },
-                sectionIndex
+                sectionIndex,
               );
             }}
           />
@@ -193,7 +193,7 @@ const renderSectionContent = (
         return (
           <Controller
             name={`${getCategoryKey(
-              currentCategory
+              currentCategory,
             )}.sections[${sectionIndex}].${key}`}
             control={control}
             defaultValue={value}
@@ -260,7 +260,13 @@ const SectionSetting = React.memo(
   }) => (
     <div className="w-full flex flex-col gap-6">
       <div className="flex w-full justify-between gap-3 items-center">
-        <h3 className="font-main text-2xl text-white">{index + 1} section {(currentCategory === "Privacy policy" && (index > 18 && index <= 30)) && "(Table)"}</h3>
+        <h3 className="font-main text-2xl text-white">
+          {index + 1} section{" "}
+          {currentCategory === "Privacy policy" &&
+            index > 18 &&
+            index <= 30 &&
+            "(Table)"}
+        </h3>
         {onRemove &&
           (currentCategory === "Proof of work" ||
             currentCategory === "Exhibitions") && (
@@ -296,13 +302,13 @@ const SectionSetting = React.memo(
               index,
               control,
               onImageChange,
-              currentCategory
+              currentCategory,
             )}
           </React.Fragment>
         ))}
       </div>
     </div>
-  )
+  ),
 );
 
 const DefaultProofTemplate = ({ section }) => {
@@ -402,7 +408,7 @@ const contentMapping = (
   isSmallMobile,
   renderDefaultProof,
   renderDefaultEx,
-  renderDefaultFAQ
+  renderDefaultFAQ,
 ) => ({
   "main page": {
     0: () => (
@@ -437,13 +443,13 @@ const contentMapping = (
           >
             <img
               src="/roundedScroll.svg"
-              alt=""
+              alt="roundedScroll"
               className="w-full h-auto absolute inset-0 object-contain pointer-events-none group-hover:rotate-[360deg] transition-transform duration-1000"
               draggable={false}
             />
             <img
               src="/down-arrow.svg"
-              alt=""
+              alt="down-arrow"
               className={`sm:w-[20px] sm:h-[20px] ${
                 isSmallMobile ? "h-[10px] w-[10px]" : "h-[16px] w-[16px]"
               } object-contain group-hover:scale-110 transition-transform duration-700`}
@@ -641,19 +647,44 @@ const contentMapping = (
     ),
     2: () => (
       <div className="w-full h-full flex flex-col lg:gap-6 sm:gap-4 gap-2 px-5 sm:px-10 sm:py-5 py-2.5 justify-center text-center font-main">
-        <div><b className="text-lg sm:text-xl">{section.title}</b><br/> <p className="text-xs sm:text-sm" dangerouslySetInnerHTML={createMarkup(section.description)} /></div>
+        <div>
+          <b className="text-lg sm:text-xl">{section.title}</b>
+          <br />{" "}
+          <p
+            className="text-xs sm:text-sm"
+            dangerouslySetInnerHTML={createMarkup(section.description)}
+          />
+        </div>
       </div>
     ),
     3: () => (
       <div className="w-full h-full flex flex-col lg:gap-6 sm:gap-4 gap-2 px-5 sm:px-10 sm:py-5 py-2.5 justify-center text-center font-main">
-        <div><b className="text-lg sm:text-xl">{section.title}</b><br/> <p className="text-xs sm:text-sm" dangerouslySetInnerHTML={createMarkup(section.description)} /></div>
+        <div>
+          <b className="text-lg sm:text-xl">{section.title}</b>
+          <br />{" "}
+          <p
+            className="text-xs sm:text-sm"
+            dangerouslySetInnerHTML={createMarkup(section.description)}
+          />
+        </div>
       </div>
     ),
     4: () => (
       <div className="w-full h-full flex flex-col lg:gap-6 sm:gap-4 gap-2 px-5 sm:px-10 sm:py-5 py-2.5 justify-center text-center font-main">
-        <div>{section.title && <><b className="text-lg sm:text-xl">{section.title}</b><br/></>} <p className="text-xs sm:text-sm" dangerouslySetInnerHTML={createMarkup(section.description)} /></div>
+        <div>
+          {section.title && (
+            <>
+              <b className="text-lg sm:text-xl">{section.title}</b>
+              <br />
+            </>
+          )}{" "}
+          <p
+            className="text-xs sm:text-sm"
+            dangerouslySetInnerHTML={createMarkup(section.description)}
+          />
+        </div>
       </div>
-    )
+    ),
   },
   elements: {
     0: () => (
@@ -676,7 +707,7 @@ const contentMapping = (
             >
               <img
                 src="/email.svg"
-                alt=""
+                alt="email"
                 className="w-[24px] h-[24px] object-contain"
               />
               <span className="font-main font-[300] sm:text-sm text-xs underline underline-offset-1">
@@ -695,17 +726,17 @@ const ContentDisplay = ({ section, category, index }) => {
 
   const renderDefaultProof = useCallback(
     () => <DefaultProofTemplate section={section} />,
-    [section]
+    [section],
   );
 
   const renderDefaultEx = useCallback(
     () => <DefaultExTemplate section={section} />,
-    [section]
+    [section],
   );
 
   const renderDefaultFAQ = useCallback(
     () => <DefaultFAQTemplate section={section} />,
-    [section]
+    [section],
   );
 
   const mappings = contentMapping(
@@ -714,7 +745,7 @@ const ContentDisplay = ({ section, category, index }) => {
     isSmallMobile,
     renderDefaultProof,
     renderDefaultEx,
-    renderDefaultFAQ
+    renderDefaultFAQ,
   );
   const categoryContent = mappings[category.toLowerCase()];
   const renderContent =
@@ -774,7 +805,7 @@ const AdminContent = () => {
       newImages[sectionIndex] = updatedImages[index];
       setValue(
         `${categoryKey}.sections[${sectionIndex}].images`,
-        updatedImages
+        updatedImages,
       );
     } else {
       newImages[index] = updatedImages[index];
@@ -831,7 +862,7 @@ const AdminContent = () => {
         setValue(`${categoryKey}.sections[${sectionIndex}].list`, value);
       else setValue(`${categoryKey}.sections[${sectionIndex}].${name}`, value);
     },
-    [currentCategory, setValue]
+    [currentCategory, setValue],
   );
 
   const formData = watch();
@@ -847,7 +878,13 @@ const AdminContent = () => {
     const lastSection = isProof ? sections[sections.length - 1] : null;
 
     return (
-      <div className={`w-full h-auto flex flex-col gap-11 ${(currentCategory !== "Privacy policy" && currentCategory !== "Policies") && "xl:max-w-[calc(50%-75px)]"}`}>
+      <div
+        className={`w-full h-auto flex flex-col gap-11 ${
+          currentCategory !== "Privacy policy" &&
+          currentCategory !== "Policies" &&
+          "xl:max-w-[calc(50%-75px)]"
+        }`}
+      >
         <AnimatePresence>
           {mainSections.map((section, index) => (
             <SectionSetting
@@ -939,7 +976,7 @@ const AdminContent = () => {
 
       const updatedImages = [...images];
       const newImages = updatedImages.filter((img) =>
-        img?.src?.startsWith("data:image")
+        img?.src?.startsWith("data:image"),
       );
 
       if (newImages.length > 0) {
@@ -957,7 +994,7 @@ const AdminContent = () => {
             pending: "Uploading images...",
             success: "Images uploaded successfully!",
             error: "Failed to upload images",
-          }
+          },
         );
 
         let uploadedIndex = 0;
@@ -971,7 +1008,7 @@ const AdminContent = () => {
 
       if (currentCategory === "Exhibitions")
         payload.sections.map(
-          (section, index) => (section.images = updatedImages[index])
+          (section, index) => (section.images = updatedImages[index]),
         );
       else payload.sections[0].images = updatedImages;
 
@@ -1028,7 +1065,9 @@ const AdminContent = () => {
                 className="w-full flex xl:flex-row flex-col 2xl:gap-[150px] lg:gap-[100px] gap-[45px] mt-5 min-h-[580px]"
               >
                 {renderSections()}
-                {(currentCategory !== "Privacy policy" && currentCategory !== "Policies") && renderScreens()}
+                {currentCategory !== "Privacy policy" &&
+                  currentCategory !== "Policies" &&
+                  renderScreens()}
               </motion.div>
             </form>
           </AnimatePresence>

@@ -17,7 +17,7 @@ const SuccessPayment = ({ setCart }) => {
       <Helmet>
         <title>Successfull Payment - Thank You!</title>
       </Helmet>
-      <div className="w-[100vw] h-full">
+      <section className="w-[100vw] h-full">
         <div className="w-full h-[100svh] relative px-[16px] xl:px-[6.25rem] flex items-center justify-center">
           <div className="flex flex-col w-full max-w-[1000px] bg-[#ffffff1A] h-auto justify-center items-center font-main z-[1] relative p-[50px] rounded-3xl text-center">
             <IoBagCheck className="text-[#34dd00] mb-2 text-[40px]" />
@@ -48,7 +48,7 @@ const SuccessPayment = ({ setCart }) => {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

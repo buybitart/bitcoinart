@@ -104,7 +104,7 @@ const PayForAuction = () => {
           pending: `Loading...`,
           success: `Redirecting...`,
           error: `Failed to pay :/`,
-        }
+        },
       );
 
       if (response.data.checkoutLink)
@@ -125,7 +125,7 @@ const PayForAuction = () => {
           pending: `Loading...`,
           success: `Redirecting...`,
           error: `Failed to pay :/`,
-        }
+        },
       );
 
       if (response.data.checkoutLink)
@@ -151,7 +151,7 @@ const PayForAuction = () => {
           pending: "Confirming payment...",
           success: "Payment confirmed!",
           error: "Failed to confirm payment :/",
-        }
+        },
       );
 
       if (response.data.message === "Payment confirmed!")
@@ -204,7 +204,7 @@ const PayForAuction = () => {
       <Helmet>
         <title>Auction Payment | 5KSANA</title>
       </Helmet>
-      <div className="w-[100vw] h-full">
+      <section className="w-[100vw] h-full">
         <div className="w-full h-full relative mt-[calc(52px+40px)] xl:mt-[calc(65px+40px)] px-[16px] xl:px-[6.25rem] pb-14">
           <form
             onSubmit={handleSubmit(onSubmit)}
@@ -437,7 +437,7 @@ const PayForAuction = () => {
                           PayCard(
                             paymentIntentId,
                             userStore.user.id || userStore.user._id,
-                            auction
+                            auction,
                           )
                         }
                       />
@@ -544,7 +544,7 @@ const PayForAuction = () => {
         </div>
 
         <Footer />
-      </div>
+      </section>
     </>
   );
 };

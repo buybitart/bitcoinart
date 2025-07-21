@@ -17,7 +17,7 @@ const About = () => {
       <>
         <SEO
           title="5KSANA | About | Bitcoin Artist & Visionary Fashion Designer"
-          description="Learn about 5KSANA, a pioneering Bitcoin artist and fashion designer blending blockchain culture with innovative art. Explore the journey, inspirations, and vision behind unique crypto-themed masterpieces and creative expressions. Discover the story today!"
+          description="Discover 5KSANA, a visionary Bitcoin artist fusing blockchain culture with unique art and fashion. Explore their journey, inspirations, and creations."
           name="5KSANA | About | Bitcoin Artist & Visionary Fashion Designer"
           type="page"
           page="about"
@@ -30,15 +30,15 @@ const About = () => {
     <>
       <SEO
         title="5KSANA | About | Bitcoin Artist & Visionary Fashion Designer"
-        description="Learn about 5KSANA, a pioneering Bitcoin artist and fashion designer blending blockchain culture with innovative art. Explore the journey, inspirations, and vision behind unique crypto-themed masterpieces and creative expressions. Discover the story today!"
+        description="Discover 5KSANA, a visionary Bitcoin artist fusing blockchain culture with unique art and fashion. Explore their journey, inspirations, and creations."
         name="5KSANA | About | Bitcoin Artist & Visionary Fashion Designer"
         type="page"
         page="about"
       />
-      <div className="w-[100vw] h-full">
+      <section className="w-[100vw] h-full">
         <div className="w-full h-full relative mt-[calc(52px+50px)] xl:mt-[calc(65px+50px)] px-[16px] xl:px-[6.25rem] sm:mb-10 mb-20">
           <div className="w-full h-auto flex flex-col lg:gap-8 sm:gap-6 gap-4 relative">
-            <h2
+            <h1
               dangerouslySetInnerHTML={createMarkup(settings.sections[0].title)}
               className="font-main uppercase lg:text-6xl sm:text-4xl text-3xl font-[600] tracking-wide"
             />
@@ -63,13 +63,13 @@ const About = () => {
                 <div className="flex flex-col lg:gap-8 sm:gap-6 gap-4 font-main w-full lg:max-w-[40%]">
                   <h3
                     dangerouslySetInnerHTML={createMarkup(
-                      settings.sections[1].title
+                      settings.sections[1].title,
                     )}
                     className="lg:text-6xl sm:text-4xl text-3xl font-[600] uppercase"
                   />
                   <p
                     dangerouslySetInnerHTML={createMarkup(
-                      settings.sections[1].description
+                      settings.sections[1].description,
                     )}
                     className="text-[#CFCFCF] lg:font-[400] font-[300] lg:text-xl text-base"
                   />
@@ -77,7 +77,7 @@ const About = () => {
                 <div className="lg:w-full w-auto lg:h-[360px] h-auto flex items-center justify-center lg:relative absolute lg:bottom-0 -bottom-44 lg:right-0 -right-10">
                   <img
                     src="/cube@4x.svg"
-                    alt=""
+                    alt="cube"
                     className="w-auto lg:h-[470px] h-[150px] lg:absolute lg:top-1/2 lg:-translate-x-[30%] lg:-translate-y-1/2 lg:left-1/2"
                     draggable="false"
                   />
@@ -88,13 +88,13 @@ const About = () => {
                 <div className="flex flex-col gap-8 font-main w-full lg:max-w-[50%]">
                   <h3
                     dangerouslySetInnerHTML={createMarkup(
-                      settings.sections[2].title
+                      settings.sections[2].title,
                     )}
                     className="lg:text-6xl sm:text-4xl text-3xl font-[600] uppercase"
                   />
                   <p
                     dangerouslySetInnerHTML={createMarkup(
-                      settings.sections[2].description
+                      settings.sections[2].description,
                     )}
                     className="text-[#CFCFCF] lg:font-[400] font-[300] lg:text-xl text-base"
                   />
@@ -102,7 +102,7 @@ const About = () => {
                 <div className="lg:w-full w-auto lg:h-[300px] h-[150px] flex lg:items-center lg:justify-center relative lg:ml-0 ml-10">
                   <img
                     src="/cylinder@4x.svg"
-                    alt=""
+                    alt="cylinder"
                     className="w-auto lg:h-[360px] sm:h-[150px] h-[130px] object-contain relative lg:absolute lg:top-1/2 lg:-translate-x-[90%] lg:-translate-y-1/2 lg:left-1/2"
                     draggable="false"
                   />
@@ -113,7 +113,7 @@ const About = () => {
                 <div className="w-full h-auto flex flex-col gap-7 font-main">
                   <h2
                     dangerouslySetInnerHTML={createMarkup(
-                      settings.sections[3].title
+                      settings.sections[3].title,
                     )}
                     className="lg:text-6xl sm:text-4xl text-3xl uppercase font-[600] text-white"
                   />
@@ -126,7 +126,7 @@ const About = () => {
                 <div className="w-full h-auto flex flex-col justify-end">
                   <p
                     dangerouslySetInnerHTML={createMarkup(
-                      settings.sections[3].description
+                      settings.sections[3].description,
                     )}
                     className="text-[#cfcfcf] lg:max-w-[85%] lg:text-xl text-base"
                   />
@@ -138,7 +138,7 @@ const About = () => {
 
         <ContactForm />
         <Footer />
-      </div>
+      </section>
     </>
   );
 };

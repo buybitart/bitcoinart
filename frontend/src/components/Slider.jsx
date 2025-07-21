@@ -8,11 +8,18 @@ import usePreview from "../hooks/usePreview";
 import { videoURL } from "../utils";
 import { PiMagnifyingGlassPlus } from "react-icons/pi";
 
-const Slider = ({ data, sliderRef, sliderContainerRef, handleOpenOriginal }) => {
+const Slider = ({
+  data,
+  sliderRef,
+  sliderContainerRef,
+  handleOpenOriginal,
+}) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const mainSlider = useRef();
 
-  const previewImage = usePreview(data?.video ? videoURL + "/" + data?.video : null);
+  const previewImage = usePreview(
+    data?.video ? videoURL + "/" + data?.video : null,
+  );
 
   const slides = useMemo(() => {
     const images = data.images || [];
@@ -44,7 +51,7 @@ const Slider = ({ data, sliderRef, sliderContainerRef, handleOpenOriginal }) => 
   const allowedVideoExtensions = [".mp4", ".mov", ".webm", ".avi", ".hevc"];
 
   return (
-    <div
+    <section
       className="w-full 2xl:max-w-[768px] max-w-[628px] 2xl:h-[622px] h-[522px] flex flex-col gap-6 items-center"
       ref={sliderContainerRef}
     >
@@ -59,7 +66,10 @@ const Slider = ({ data, sliderRef, sliderContainerRef, handleOpenOriginal }) => 
         {(slides.length <= 4 ? [...slides, ...slides] : slides).map(
           (item, index) => (
             <SwiperSlide className="h-[427px] relative" key={index}>
-              {typeof item === "string" && allowedVideoExtensions.some(ext => item.toLowerCase().endsWith(ext)) ? (
+              {typeof item === "string" &&
+              allowedVideoExtensions.some((ext) =>
+                item.toLowerCase().endsWith(ext),
+              ) ? (
                 <ReactPlayer
                   url={item}
                   playing={false}
@@ -74,22 +84,31 @@ const Slider = ({ data, sliderRef, sliderContainerRef, handleOpenOriginal }) => 
                   <ImageLoader
                     src={item.optimized}
                     alt={`slide-${index}`}
-                    containerStyles={'h-full'}
+                    containerStyles={"h-full"}
                     className="w-full h-full max-h-[527px] object-cover object-center"
                   />
-                  <button onClick={() => handleOpenOriginal(data.images.findIndex(image => image.optimized === item.optimized))} className="absolute left-4 bottom-4 bg-[#000] flex items-center justify-center hover:bg-white group transition-colors duration-300 w-12 h-12 rounded-2xl">
+                  <button
+                    onClick={() =>
+                      handleOpenOriginal(
+                        data.images.findIndex(
+                          (image) => image.optimized === item.optimized,
+                        ),
+                      )
+                    }
+                    className="absolute left-4 bottom-4 bg-[#000] flex items-center justify-center hover:bg-white group transition-colors duration-300 w-12 h-12 rounded-2xl"
+                  >
                     <PiMagnifyingGlassPlus className="text-xl scale-x-[-1] group-hover:text-black group-hover:scale-x-[1] text-white transition-[color,transform] duration-300" />
                   </button>
                 </>
               )}
             </SwiperSlide>
-          )
+          ),
         )}
       </Swiper>
       <div className="flex w-full justify-center items-center gap-5">
         <button
           className={classNames(
-            "w-[40px] h-[40px] transition-opacity duration-[350ms] flex justify-center items-center"
+            "w-[40px] h-[40px] transition-opacity duration-[350ms] flex justify-center items-center",
           )}
           onClick={handlePrev}
         >
@@ -124,16 +143,22 @@ const Slider = ({ data, sliderRef, sliderContainerRef, handleOpenOriginal }) => 
               >
                 <ImageLoader
                   src={
-                    typeof item === "string" && allowedVideoExtensions.some(ext => item.toLowerCase().endsWith(ext))
+                    typeof item === "string" &&
+                    allowedVideoExtensions.some((ext) =>
+                      item.toLowerCase().endsWith(ext),
+                    )
                       ? previewImage
                       : item.optimized
                   }
                   className={`w-full h-full object-cover`}
-                  containerStyles={'h-full'}
+                  containerStyles={"h-full"}
                   alt={`thumb-${index}`}
                   loading="lazy"
                 />
-                {typeof item === "string" && allowedVideoExtensions.some(ext => item.toLowerCase().endsWith(ext)) ? (
+                {typeof item === "string" &&
+                allowedVideoExtensions.some((ext) =>
+                  item.toLowerCase().endsWith(ext),
+                ) ? (
                   <div className="w-[20px] h-[20px] flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 dropShadowCustom">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -157,12 +182,12 @@ const Slider = ({ data, sliderRef, sliderContainerRef, handleOpenOriginal }) => 
                   <></>
                 )}
               </SwiperSlide>
-            )
+            ),
           )}
         </Swiper>
         <button
           className={classNames(
-            "w-[40px] h-[40px] transition-opacity duration-[350ms] flex justify-center items-center"
+            "w-[40px] h-[40px] transition-opacity duration-[350ms] flex justify-center items-center",
           )}
           onClick={handleNext}
         >
@@ -180,7 +205,7 @@ const Slider = ({ data, sliderRef, sliderContainerRef, handleOpenOriginal }) => 
           </svg>
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

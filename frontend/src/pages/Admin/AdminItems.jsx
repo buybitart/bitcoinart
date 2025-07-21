@@ -297,13 +297,13 @@ const ProductList = ({
                 isMobile={isMobile}
                 setPopup={setPopup}
               />
-            )
+            ),
           )
         ) : (
           <div className="relative h-full flex flex-col w-full justify-center items-center gap-2">
             <img
               src="/empty-box.svg"
-              alt=""
+              alt="empty-box"
               className="w-full h-full max-h-[170px] sm:max-h-[225px] object-contain invert opacity-40"
             />
             <p className="font-main sm:text-xl text-lg font-[300] opacity-40">

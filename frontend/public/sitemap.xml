@@ -1,40 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <!-- Core site pages -->
   <url>
     <loc>https://buybitart.com/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://buybitart.com/shop</loc>
-    <lastmod>2025-04-16</lastmod>
+    <loc>https://buybitart.com/about/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/PvRK2mxT/52b29c2d00c6.jpg</image:loc>
+      <image:caption>About Me Image 1</image:caption>
+      <image:title>About Me Image 1</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.ibb.co/SXTDx37N/432f6c3670c3.jpg</image:loc>
+      <image:caption>About Me Image 2</image:caption>
+      <image:title>About Me Image 2</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.ibb.co/G3RnhKwK/a31c36b80dca.jpg</image:loc>
+      <image:caption>About Me Image 3</image:caption>
+      <image:title>About Me Image 3</image:title>
+    </image:image>
   </url>
-
   <url>
-    <loc>https://buybitart.com/about</loc>
+    <loc>https://buybitart.com/gallery/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
-
-  <url>
-    <loc>https://buybitart.com/gallery</loc>
-  </url>
-
-  <url>
-    <loc>https://buybitart.com/search</loc>
-  </url>
-
-  <url>
-    <loc>https://buybitart.com/exhibitions</loc>
-  </url>
-
+  <!-- Additional informational pages -->
   <url>
     <loc>https://buybitart.com/support</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-
   <url>
     <loc>https://buybitart.com/proof</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <video:video>
+      <video:player_loc><![CDATA[https://www.youtube.com/embed/MyXw57-xBzM]]></video:player_loc>
+      <video:title>Painting-Embroidery «Unknown Bitcoin»</video:title>
+    </video:video>
+    <video:video>
+      <video:player_loc><![CDATA[https://www.youtube.com/embed/kA5Z8HIZ6qI]]></video:player_loc>
+      <video:title>Painting-Embroidery «Bitcoin's Specialty Pizza Challenge»</video:title>
+    </video:video>
+    <video:video>
+      <video:player_loc><![CDATA[https://www.youtube.com/embed/ReJPvLiW6fw]]></video:player_loc>
+      <video:title>Painting-Embroidery «Sunny El Salvador and Bitcoin»</video:title>
+    </video:video>
+    <video:video>
+      <video:player_loc><![CDATA[https://www.youtube.com/embed/jew6bIqfvhY]]></video:player_loc>
+      <video:title>Painting-Embroidery «Fiery Bitcoin»</video:title>
+    </video:video>
+    <video:video>
+      <video:player_loc><![CDATA[https://www.youtube.com/embed/vyRh7uZkKuc]]></video:player_loc>
+      <video:title>Painting «BULLCOIN»</video:title>
+    </video:video>
   </url>
-
-    <url>
-    <loc>https://buybitart.com/faq</loc>
+  <url>
+    <loc>https://buybitart.com/exhibitions</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/Z6SXxLZ3/38b19173eda7.jpg</image:loc>
+      <image:caption>Lugano Plan ₿, Lugano, Switzerland, 2023</image:caption>
+      <image:title>Lugano Plan ₿ 2023</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.ibb.co/Z1JCBW7q/4937f322ffd8.jpg</image:loc>
+      <image:caption>Bitcoin Atlantis, Funchal, Portugal, 2024</image:caption>
+      <image:title>Bitcoin Atlantis 2024</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.ibb.co/sJtH0xbM/701d6c8cb21d.jpg</image:loc>
+      <image:caption>Lugano Plan ₿, Lugano, Switzerland, 2024</image:caption>
+      <image:title>Lugano Plan ₿ 2024</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.ibb.co/TD6CJCvj/c7d3e8d33e59.jpg</image:loc>
+      <image:caption>Bitcoin FilmFest, Warsaw, Poland, 2024</image:caption>
+      <image:title>Bitcoin FilmFest 2024</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.ibb.co/LdV1szKd/11895be6b95c.jpg</image:loc>
+      <image:caption>CoinFest, Manchester, UK, 2021</image:caption>
+      <image:title>CoinFest 2021</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.ibb.co/WN4dJC0V/846a7e38fdcf.jpg</image:loc>
+      <image:caption>Bitcoin FilmFest, Warsaw, Poland, 2025</image:caption>
+      <image:title>Bitcoin FilmFest 2025</image:title>
+    </image:image>
+  </url>
+  <!-- Gallery detail pages with images -->
+  <url>
+    <loc>https://buybitart.com/gallery/phoenix/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/TyTx94d/e4e775c1bf18.jpg</image:loc>
+      <image:caption>PAINTING-EMBROIDERY «PHOENIX»</image:caption>
+      <image:title>PAINTING-EMBROIDERY «PHOENIX»</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buybitart.com/gallery/magic-bitcoin/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/TxdV8v6g/23d14696b0c9.jpg</image:loc>
+      <image:caption>PAINTING-EMBROIDERY «MAGIC BITCOIN»</image:caption>
+      <image:title>PAINTING-EMBROIDERY «MAGIC BITCOIN»</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buybitart.com/gallery/lotus-of-bitcoin/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/DBRqJJP/ac46a70a5fd3.jpg</image:loc>
+      <image:caption>PAINTING-EMBROIDERY «LOTUS OF BITCOIN»</image:caption>
+      <image:title>PAINTING-EMBROIDERY «LOTUS OF BITCOIN»</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buybitart.com/gallery/bitcoin-footprint/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/4RgBzjBq/51b0236bb47d.jpg</image:loc>
+      <image:caption>PAINTING-EMBROIDERY «BITCOIN FOOTPRINT»</image:caption>
+      <image:title>PAINTING-EMBROIDERY «BITCOIN FOOTPRINT»</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buybitart.com/gallery/mighty-bull--bitcoin/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/gZqf5hLK/08c23da16300.jpg</image:loc>
+      <image:caption>PAINTING-EMBROIDERY «MIGHTY BULL AND BITCOIN»</image:caption>
+      <image:title>PAINTING-EMBROIDERY «MIGHTY BULL AND BITCOIN»</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buybitart.com/gallery/bitcoin-bird/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/HpkdWk3c/3dcee9aed2c6.jpg</image:loc>
+      <image:caption>PAINTING-EMBROIDERY «BITCOIN BIRD»</image:caption>
+      <image:title>PAINTING-EMBROIDERY «BITCOIN BIRD»</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buybitart.com/gallery/bitcoin-mind/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/3YT0V6jw/6ffb0e6133d6.jpg</image:loc>
+      <image:caption>PAINTING-EMBROIDERY «BITCOIN MIND»</image:caption>
+      <image:title>PAINTING-EMBROIDERY «BITCOIN MIND»</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buybitart.com/gallery/cosmic-bitcoin/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/tpnMPhq4/4ddcdcbbd3c3.jpg</image:loc>
+      <image:caption>PAINTING-EMBROIDERY «COSMIC BITCOIN»</image:caption>
+      <image:title>PAINTING-EMBROIDERY «COSMIC BITCOIN»</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buybitart.com/gallery/bitcoin-is-new-reality/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/G4b14SSZ/54d3e5bebd63.jpg</image:loc>
+      <image:caption>PAINTING-EMBROIDERY «BITCOIN IS NEW REALITY»</image:caption>
+      <image:title>PAINTING-EMBROIDERY «BITCOIN IS NEW REALITY»</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buybitart.com/gallery/bitcoinull/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/SXRfzRFF/d77580d4490c.jpg</image:loc>
+      <image:caption>PAINTING-EMBROIDERY «₿ULL»</image:caption>
+      <image:title>PAINTING-EMBROIDERY «₿ULL»</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buybitart.com/gallery/eyes-of-bitcoin/</loc>
+    <lastmod>2025-07-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://i.ibb.co/VYr6K8b0/04182e508216.jpg</image:loc>
+      <image:caption>PAINTING-EMBROIDERY «EYES OF BITCOIN»</image:caption>
+      <image:title>PAINTING-EMBROIDERY «EYES OF BITCOIN»</image:title>
+    </image:image>
   </url>
 </urlset>

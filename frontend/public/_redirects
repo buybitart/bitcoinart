@@ -1,1 +1,8 @@
+https://www.buybitart.com/*        https://buybitart.com/:splat 301!
+http://www.buybitart.com/*         https://buybitart.com/:splat 301!
+http://buybitart.com/*             https://buybitart.com/:splat 301!
+http://buybitart.netlify.app/*     https://buybitart.com/:splat 301!
+https://buybitart.netlify.app/*    https://buybitart.com/:splat 301!
+http://buybitart.fly.dev/*         https://buybitart.com/:splat 301!
+https://buybitart.fly.dev/*        https://buybitart.com/:splat 301!
 /*    /index.html    200

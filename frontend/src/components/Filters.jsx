@@ -18,7 +18,7 @@ const Filters = ({ isSticky, min, max, onInputChange, priceType }) => {
         isSticky ? "top-[113px] sm:top-[135px]" : "top-[247px]"
       } border-[1px] border-t-0 border-[#ffffff10] rounded-b-xl p-4`}
     >
-      <div className="flex flex-col gap-2 w-full h-auto">
+      <section className="flex flex-col gap-2 w-full h-auto">
         <div className="flex gap-1.5 justify-between items-center w-full h-auto">
           <h4 className="font-main text-lg font-[400] tracking-wide">Price</h4>
           <svg
@@ -72,9 +72,9 @@ const Filters = ({ isSticky, min, max, onInputChange, priceType }) => {
             type="text"
           />
         </div>
-      </div>
+      </section>
 
-      <div className="w-full h-auto flex flex-col gap-2">
+      <section className="w-full h-auto flex flex-col gap-2">
         {["BTC", "USD"].map((category) => (
           <label
             key={category}
@@ -93,7 +93,7 @@ const Filters = ({ isSticky, min, max, onInputChange, priceType }) => {
             <div className="w-4 h-4 relative left-[-4px] bg-transparent outline outline-1 outline-offset-2 outline-[#909090] rounded-full peer-checked:bg-white peer-checked:outline-[#909090] peer-hover:shadow-lg transition duration-300 ease-in-out" />
           </label>
         ))}
-      </div>
+      </section>
     </motion.div>
   );
 };

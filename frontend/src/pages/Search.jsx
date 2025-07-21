@@ -41,7 +41,7 @@ const Search = () => {
         `${import.meta.env.VITE_DB_LINK}/api/search`,
         {
           params: { query: searchText },
-        }
+        },
       );
       setSearchResults(response.data);
     } catch (error) {
@@ -87,7 +87,7 @@ const Search = () => {
     <>
       <SEO
         title="5KSANA | Search | Discover Bitcoin Art, Crypto Creations & More"
-        description="Search the 5KSANA platform to explore Bitcoin-inspired art, crypto-themed sculptures, exclusive auction items, and gallery masterpieces. Find unique creations that blend blockchain culture with artistic innovation. Start your search now!"
+        description="Search 5KSANA for Bitcoin-inspired art, crypto sculptures, auctions, and gallery pieces. Discover unique creations blending blockchain and creativity."
         name="5KSANA | Search | Discover Bitcoin Art, Crypto Creations & More"
         type="page"
         page="search"
@@ -178,17 +178,17 @@ const Search = () => {
                   {renderResultsSection(
                     searchResults.products.title,
                     searchResults.products.data,
-                    "shop"
+                    "shop",
                   )}
                   {renderResultsSection(
                     searchResults.productsAuction.title,
                     searchResults.productsAuction.data,
-                    "auction"
+                    "auction",
                   )}
                   {renderResultsSection(
                     searchResults.productsGallery.title,
                     searchResults.productsGallery.data,
-                    "gallery"
+                    "gallery",
                   )}
                 </>
               )}

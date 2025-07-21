@@ -83,7 +83,7 @@ const Home = ({ setCart, cart }) => {
       <>
         <SEO
           title="5KSANA | Bitcoin Artist and Fashion Designer"
-          description="Welcome to 5KSANA – the ultimate destination for Bitcoin-inspired art and fashion. Explore our unique collection of crypto-themed paintings, sculptures, and embroidered designs. Crafted with passion, each piece showcases innovation and creativity, blending blockchain culture with artistic expression. Browse the gallery to discover exclusive creations by 5KSANA, a visionary Bitcoin artist and fashion designer. Whether you're an art collector, crypto enthusiast, or fashion connoisseur, 5KSANA offers a curated selection of iconic works that celebrate the intersection of technology and style. Shop now and immerse yourself in the world of crypto art!"
+          description="Discover Bitcoin-inspired art & fashion by 5KSANA. Unique crypto paintings, sculptures & designs blending blockchain culture with creativity."
           name="5ksana - Bitcoin Artist and Fashion Designer"
           type="page"
           page=""
@@ -96,7 +96,7 @@ const Home = ({ setCart, cart }) => {
     <>
       <SEO
         title="5KSANA | Bitcoin Artist and Fashion Designer"
-        description="Welcome to 5KSANA – the ultimate destination for Bitcoin-inspired art and fashion. Explore our unique collection of crypto-themed paintings, sculptures, and embroidered designs. Crafted with passion, each piece showcases innovation and creativity, blending blockchain culture with artistic expression. Browse the gallery to discover exclusive creations by 5KSANA, a visionary Bitcoin artist and fashion designer. Whether you're an art collector, crypto enthusiast, or fashion connoisseur, 5KSANA offers a curated selection of iconic works that celebrate the intersection of technology and style. Shop now and immerse yourself in the world of crypto art!"
+        description="Discover Bitcoin-inspired art & fashion by 5KSANA. Unique crypto paintings, sculptures & designs blending blockchain culture with creativity."
         name="5ksana - Bitcoin Artist and Fashion Designer"
         type="page"
         page=""
@@ -128,7 +128,7 @@ const Home = ({ setCart, cart }) => {
                 </h1>
                 <span
                   dangerouslySetInnerHTML={createMarkup(
-                    settings.sections[0].description
+                    settings.sections[0].description,
                   )}
                   className="mt-2 sm:mt-6 font-main font-[400] text-lg sm:text-[2.5rem] uppercase sm:leading-[3rem] sm:tracking-wider xl:text-left text-center opacity-90"
                 />
@@ -156,13 +156,13 @@ const Home = ({ setCart, cart }) => {
                 >
                   <img
                     src="/roundedScroll.svg"
-                    alt=""
+                    alt="rounded-scroll"
                     className="w-full h-auto absolute inset-0 object-contain pointer-events-none group-hover:rotate-[360deg] transition-transform duration-1000"
                     draggable={false}
                   />
                   <img
                     src="/down-arrow.svg"
-                    alt=""
+                    alt="down-arrow"
                     className="w-[28px] h-[28px] object-contain group-hover:scale-110 transition-transform duration-700"
                     draggable={false}
                   />
@@ -187,14 +187,14 @@ const Home = ({ setCart, cart }) => {
         </section>
 
         {/* Website Content */}
-        <section
+        <main
           className={`website-content z-[1] relative block w-full h-auto min-h-[1695px] overflow-hidden`}
         >
-          <div className="w-full h-auto sm:h-[100vh] sm:pb-0 pb-10 relative">
+          <section className="w-full h-auto sm:h-[100vh] sm:pb-0 pb-10 relative">
             <div className="w-auto xl:w-max h-auto xl:h-[100vh] xl:mt-0 mt-[120px] relative xl:flex-row flex-col flex xl:justify-center xl:items-center horizontalSection">
               <h2
                 dangerouslySetInnerHTML={createMarkup(
-                  settings.sections[1].title
+                  settings.sections[1].title,
                 )}
                 className={`font-extra w-auto xl:w-[100vw] text-center uppercase ${
                   isSmallMobile ? "text-4xl" : "text-5xl"
@@ -233,11 +233,11 @@ const Home = ({ setCart, cart }) => {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
           <ContactForm decor />
           <Footer />
-        </section>
+        </main>
       </div>
 
       <Modal isOpen={activated}>

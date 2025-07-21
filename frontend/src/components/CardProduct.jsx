@@ -11,7 +11,9 @@ import Duration from "../utils/Duration";
 
 const CardProduct = ({ data, setCart, cart, auction, priceType }) => {
   const { isSmallMobile } = useResponsive();
-  const [isAdded, setIsAdded] = useState(cart.find((item) => item.hash === data.hash));
+  const [isAdded, setIsAdded] = useState(
+    cart.find((item) => item.hash === data.hash),
+  );
   const shortName = data.hash.split("-");
   const capitalizeShortName = shortName
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
@@ -26,8 +28,8 @@ const CardProduct = ({ data, setCart, cart, auction, priceType }) => {
         cart.map((item) =>
           item.hash === data.hash
             ? { ...item, quantity: item.quantity + 1 }
-            : item
-        )
+            : item,
+        ),
       );
     else return setCart((prev) => [...prev, { ...data, quantity: 1 }]);
   }
@@ -38,7 +40,7 @@ const CardProduct = ({ data, setCart, cart, auction, priceType }) => {
 
   return (
     <>
-      <div className="w-full h-full rounded-xl p-3.5 relative overflow-hidden border-[1px] border-[#FFFFFF1A] hover:bg-[#ffffff10] transition-colors duration-300 flex flex-col justify-between gap-3 bg-[#00000027] backdrop-blur-3xl">
+      <section className="w-full h-full rounded-xl p-3.5 relative overflow-hidden border-[1px] border-[#FFFFFF1A] hover:bg-[#ffffff10] transition-colors duration-300 flex flex-col justify-between gap-3 bg-[#00000027] backdrop-blur-3xl">
         <Link
           to={auction ? `/auction/${data.hash}` : `/shop/${data.hash}`}
           className="flex flex-col relative gap-3"
@@ -112,7 +114,7 @@ const CardProduct = ({ data, setCart, cart, auction, priceType }) => {
             <AddToCartButton addToCart={addToCart} isAdded={isAdded} />
           )}
         </div>
-      </div>
+      </section>
     </>
   );
 };

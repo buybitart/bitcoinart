@@ -24,7 +24,7 @@ const AddToCartButton = ({ addToCart, isAdded }) => {
     >
       <img
         src="/bag.svg"
-        alt=""
+        alt="bag"
         className={`w-[24px] h-[24px] object-contain invert ${
           isAdded ? "" : "group-hover:invert-0"
         } transition duration-[250ms]`}

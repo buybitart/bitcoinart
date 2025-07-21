@@ -8,7 +8,7 @@ import ImageLoader from "./ImageLoader";
 const CardShow = ({ data, setCart, cart }) => {
   const { isSmallMobile, isMobile } = useResponsive();
   const [isAdded, setIsAdded] = useState(
-    Boolean(cart.find((item) => item.hash === data.hash))
+    Boolean(cart.find((item) => item.hash === data.hash)),
   );
   const shortName = data.hash.split("-");
   const capitalizeShortName = shortName
@@ -24,8 +24,8 @@ const CardShow = ({ data, setCart, cart }) => {
         cart.map((item) =>
           item.hash === data.hash
             ? { ...item, quantity: item.quantity + 1 }
-            : item
-        )
+            : item,
+        ),
       );
     else return setCart((prev) => [...prev, { ...data, quantity: 1 }]);
   }
@@ -35,7 +35,7 @@ const CardShow = ({ data, setCart, cart }) => {
   }, [cart]);
 
   return (
-    <div className="w-auto xl:min-w-[634px] h-auto xl:h-[32.5rem] xl:flex-row flex-col flex xl:items-end xl:gap-6 gap-3">
+    <section className="w-auto xl:min-w-[634px] h-auto xl:h-[32.5rem] xl:flex-row flex-col flex xl:items-end xl:gap-6 gap-3">
       <div className="w-[316px] sm:w-[376px] h-full rounded-xl border-[1px] border-[#FFFFFF1A] p-3.5 relative overflow-hidden bg-[#00000027] hover:bg-[#ffffff10] transition-colors duration-300 backdrop-blur-3xl flex flex-col justify-between lg:gap-0 gap-3 z-[0]">
         <Link
           to={`/shop/${data.hash}`}
@@ -54,7 +54,7 @@ const CardShow = ({ data, setCart, cart }) => {
               {<span className="text-white">{data.delivery}</span>}
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-[#BCBCBC]">Dimension (cm):</span>{" "}
+              <span className="text-[#BCBCBC]">Size (cm):</span>{" "}
               {<span className="text-white">{data.dimensions}</span>}
             </div>
           </div>
@@ -81,7 +81,7 @@ const CardShow = ({ data, setCart, cart }) => {
           >
             <img
               src="/bag.svg"
-              alt=""
+              alt="bag"
               className={`w-[24px] h-[24px] object-contain invert ${
                 isAdded ? "" : "group-hover:invert-0"
               } transition duration-[250ms]`}
@@ -129,7 +129,7 @@ const CardShow = ({ data, setCart, cart }) => {
         >
           <img
             src="/bag.svg"
-            alt=""
+            alt="bag"
             className={`w-[24px] h-[24px] object-contain invert ${
               isAdded ? "" : "group-hover:invert-0"
             } transition duration-[250ms]`}
@@ -149,7 +149,7 @@ const CardShow = ({ data, setCart, cart }) => {
           )}
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

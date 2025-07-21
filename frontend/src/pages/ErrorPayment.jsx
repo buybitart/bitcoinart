@@ -10,7 +10,7 @@ const ErrorPayment = () => {
       <Helmet>
         <title>Error Payment | 5KSANA</title>
       </Helmet>
-      <div className="w-[100vw] h-full">
+      <section className="w-[100vw] h-full">
         <div className="w-full h-[100svh] relative px-[16px] xl:px-[6.25rem] flex items-center justify-center">
           <div className="flex flex-col w-full max-w-[1000px] bg-[#ffffff1A] h-auto justify-center items-center font-main z-[1] relative p-[50px] rounded-3xl text-center">
             <BiSolidErrorAlt className="text-[#dd0000] mb-2 text-[40px]" />
@@ -42,7 +42,7 @@ const ErrorPayment = () => {
             </a>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

@@ -9,7 +9,7 @@ const Accordion = ({ children, title, id, active = false }) => {
   }, []);
 
   return (
-    <div className="py-1.5 bg-[#212121] group px-4 rounded-xl border-[1px] border-[#ffffff05]">
+    <section className="py-1.5 bg-[#212121] group px-4 rounded-xl border-[1px] border-[#ffffff05]">
       <h2>
         <button
           className="flex items-center justify-between w-full text-left font-main py-2"
@@ -20,7 +20,9 @@ const Accordion = ({ children, title, id, active = false }) => {
           aria-expanded={accordionOpen}
           aria-controls={`accordion-text-${id}`}
         >
-          <span className="font-semibold sm:text-xl text-lg tracking-wide uppercase">{title}</span>
+          <span className="font-semibold sm:text-xl text-lg tracking-wide uppercase">
+            {title}
+          </span>
           <svg
             className="fill-[#fccb00] group-hover:fill-[#cacaca] shrink-0 ml-8"
             width="16"
@@ -65,7 +67,7 @@ const Accordion = ({ children, title, id, active = false }) => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

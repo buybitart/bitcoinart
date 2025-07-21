@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 
 const Table = ({ columns, data }) => {
   return (
-    <div className="overflow-hidden">
+    <section className="overflow-hidden">
       <table className="min-w-full bg-[#212121] border border-[#ffffff15] rounded-xl overflow-hidden">
         <thead className="bg-[#1A1A1A]">
           <tr>
@@ -28,7 +28,7 @@ const Table = ({ columns, data }) => {
                       key={column.accessor}
                       className="py-2 px-4 border-b border-[#ffffff15] text-white/90"
                       dangerouslySetInnerHTML={createMarkup(
-                        row[column.accessor]
+                        row[column.accessor],
                       )}
                     />
                   );
@@ -46,7 +46,7 @@ const Table = ({ columns, data }) => {
           ))}
         </tbody>
       </table>
-    </div>
+    </section>
   );
 };
 
@@ -84,7 +84,7 @@ const Privacy = () => {
       <Helmet>
         <title>Privacy Policy</title>
       </Helmet>
-      <div className="w-[100vw] h-full">
+      <section className="w-[100vw] h-full">
         <div className="w-full h-full relative mt-[calc(52px+50px)] xl:mt-[calc(65px+50px)] px-[16px] xl:px-[6.25rem] sm:mb-10 mb-20">
           <div className="w-full h-auto flex flex-col lg:gap-8 sm:gap-6 gap-4 relative font-main">
             <div className="flex flex-col gap-3">
@@ -244,7 +244,7 @@ const Privacy = () => {
                 <h4
                   className="text-[#CFCFCF] lg:font-[400] font-[300] lg:text-lg text-base"
                   dangerouslySetInnerHTML={createMarkup(
-                    realData[4].description
+                    realData[4].description,
                   )}
                 />
               </div>
@@ -491,7 +491,7 @@ const Privacy = () => {
                 <h4 className="text-[#CFCFCF] lg:font-[400] font-[300] lg:text-lg text-base italic">
                   <div
                     dangerouslySetInnerHTML={createMarkup(
-                      realData[17].description
+                      realData[17].description,
                     )}
                     className="flex flex-col gap-3"
                   />
@@ -691,7 +691,7 @@ const Privacy = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

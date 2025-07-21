@@ -70,7 +70,7 @@ const Auction = () => {
         axios.get(
           `${
             import.meta.env.VITE_DB_LINK
-          }/api/auctions/${hash}/bids?page=1&limit=5`
+          }/api/auctions/${hash}/bids?page=1&limit=5`,
         ),
       ]);
 
@@ -110,7 +110,7 @@ const Auction = () => {
       const response = await axios.get(
         `${
           import.meta.env.VITE_DB_LINK
-        }/api/auctions/${hash}/bids?page=${nextPage}&limit=5`
+        }/api/auctions/${hash}/bids?page=${nextPage}&limit=5`,
       );
       setBids((prev) => [...prev, ...response.data]);
       setPage(nextPage);
@@ -147,7 +147,7 @@ const Auction = () => {
           pending: `Placing bid...`,
           success: `Bid Placed Successfully!`,
           error: `Failed to place a bid :/`,
-        }
+        },
       );
 
       console.log("Bid placed successfully:", response.data);
@@ -215,7 +215,7 @@ const Auction = () => {
     const highestBid = bids[0];
     const userBid = bids.find(
       (bid) =>
-        bid.user._id === currentUser._id || bid.user._id === currentUser.id
+        bid.user._id === currentUser._id || bid.user._id === currentUser.id,
     );
 
     if (!isFullyDisabled) {
@@ -252,9 +252,9 @@ const Auction = () => {
     return (
       <>
         <SEO
-          title={`Bid on Auction - Exclusive Crypto Art Auction by 5KSANA`}
-          description={`Own a piece of crypto-inspired art with Auction, an exclusive auction item by 5KSANA. This Bitcoin-themed design is a one-of-a-kind masterpiece, blending blockchain culture with artistic expression. Place your bid now and claim this unique creation!`}
-          name={`Bid on Auction - Exclusive Crypto Art Auction by 5KSANA`}
+          title="Bid on Auction - Exclusive Crypto Art Auction by 5KSANA"
+          description="Bid on Auction by 5KSANA—exclusive Bitcoin-inspired art blending crypto culture and creativity. A one-of-a-kind piece. Join the auction and claim it!"
+          name="Bid on Auction - Exclusive Crypto Art Auction by 5KSANA"
           type="page"
           page={`auction/${hash}`}
         />
@@ -314,8 +314,8 @@ const Auction = () => {
     <>
       <SEO
         title={`Bid on ${data.title} - Exclusive Crypto Art Auction by 5KSANA`}
-        description={`Own a piece of crypto-inspired art with ${data.title}, an exclusive auction item by 5KSANA. This Bitcoin-themed design is a one-of-a-kind masterpiece, blending blockchain culture with artistic expression. Place your bid now and claim this unique creation!`}
-        name={`Bid on ${data.title} - Exclusive Crypto Art Auction by 5KSANA`}
+        description="Bid on Auction by 5KSANA—exclusive Bitcoin-inspired art blending crypto culture and creativity. A one-of-a-kind piece. Join the auction and claim it!"
+        name="Bid on ${data.title} - Exclusive Crypto Art Auction by 5KSANA"
         type="page"
         page={`auction/${hash}`}
       />
@@ -469,7 +469,7 @@ const Auction = () => {
                         placeholder={
                           data.currentPrice !== 0
                             ? Number(
-                                data.currentPrice + increaseRateBid
+                                data.currentPrice + increaseRateBid,
                               ).toFixed(4)
                             : Number(data.minPrice + increaseRateBid).toFixed(4)
                         }
@@ -554,7 +554,7 @@ const Auction = () => {
                     <div className="relative h-[300px] flex flex-col w-full justify-center items-center gap-2 bg-[#ffffff10] rounded-xl border-[1px] border-[#FFFFFF05]">
                       <img
                         src="/empty-box.svg"
-                        alt=""
+                        alt="empty-box"
                         className="w-full h-full max-h-[130px] sm:max-h-[130px] object-contain invert opacity-40"
                       />
                       <p className="font-main font-[300] opacity-40 tracking-wide">

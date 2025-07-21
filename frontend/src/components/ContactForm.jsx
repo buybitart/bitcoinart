@@ -26,7 +26,7 @@ const ContactForm = ({ decor }) => {
     try {
       const response = await axios.post(
         `${import.meta.env.VITE_DB_LINK}/api/contact`,
-        data
+        data,
       );
       if (response.status === 200) {
         alert("Message sent successfully!");
@@ -39,7 +39,7 @@ const ContactForm = ({ decor }) => {
   };
 
   return (
-    <div
+    <section
       className={`w-full h-auto min-h-[464px] ${
         decor ? "my-14 md:my-0" : "my-5 md:my-0"
       } relative flex justify-center items-center px-[16px] xl:px-[6.25rem]`}
@@ -51,7 +51,12 @@ const ContactForm = ({ decor }) => {
               dangerouslySetInnerHTML={createMarkup(settings.sections[0].title)}
               className="font-main uppercase 2xl:text-5xl text-4xl font-[600] w-max tracking-wider"
             />
-            <p dangerouslySetInnerHTML={createMarkup(settings.sections[0].description)} className="font-main font-[300] opacity-50 xl:max-w-[450px] w-auto text-lg sm:text-xl sm:tracking-wide" />
+            <p
+              dangerouslySetInnerHTML={createMarkup(
+                settings.sections[0].description,
+              )}
+              className="font-main font-[300] opacity-50 xl:max-w-[450px] w-auto text-lg sm:text-xl sm:tracking-wide"
+            />
           </div>
           <a
             href={`mailto:info@buybitart.com`}
@@ -60,7 +65,7 @@ const ContactForm = ({ decor }) => {
           >
             <img
               src="/email.svg"
-              alt=""
+              alt="email"
               className="w-[24px] h-[24px] object-contain"
             />
             <span className="font-main font-[300] underline underline-offset-1">
@@ -167,7 +172,7 @@ const ContactForm = ({ decor }) => {
                   transition={{ duration: 0.3 }}
                   layout
                   src="/send.svg"
-                  alt=""
+                  alt="send"
                   className="w-[32px] h-[32px] object-contain"
                 />
               </>
@@ -180,12 +185,12 @@ const ContactForm = ({ decor }) => {
         <>
           <img
             src="/btc1.png"
-            alt=""
+            alt="btc1"
             className="absolute -top-7 xl:top-10 right-[16px] sm:right-5 xl:right-10 w-[80px] xl:w-[120px] h-[80px] xl:h-[120px] object-contain z-[2] pointer-events-none"
           />
           <img
             src="/btc2.png"
-            alt=""
+            alt="btc2"
             className="absolute -bottom-20 sm:-bottom-7 xl:bottom-10 left-[16px] sm:left-5 xl:left-10 w-[80px] xl:w-[120px] h-[80px] xl:h-[120px] object-contain z-[2] pointer-events-none"
           />
 
@@ -193,7 +198,7 @@ const ContactForm = ({ decor }) => {
           <div className="w-[300px] xl:w-[400px] h-[300px] xl:h-[400px] absolute top-[-156px] left-[-183px] bg-[#FCCB002E] rounded-full blur-[150px] rotate-[22deg] pointer-events-none"></div>
         </>
       )}
-    </div>
+    </section>
   );
 };
 

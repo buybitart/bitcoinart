@@ -14,7 +14,7 @@ const CardRelated = ({ data, noPrice, fixHeight, difRoute }) => {
     >
       <ImageLoader
         src={data.images[0].optimized}
-        alt=""
+        alt="image"
         className={`w-full object-cover rounded-xl ${
           fixHeight ? "h-full max-h-[255px]" : "h-auto max-h-[355px]"
         }`}

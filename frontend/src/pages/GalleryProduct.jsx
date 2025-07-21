@@ -66,14 +66,14 @@ const GalleryProduct = () => {
     async function fetchProductDetails() {
       try {
         const galleryProductResponse = await axios.get(
-          `${import.meta.env.VITE_DB_LINK}/api/gallery-products/${hash}`
+          `${import.meta.env.VITE_DB_LINK}/api/gallery-products/${hash}`,
         );
         const relatedGalleryResponse = await axios.get(
-          `${import.meta.env.VITE_DB_LINK}/api/gallery-products`
+          `${import.meta.env.VITE_DB_LINK}/api/gallery-products`,
         );
         setData(galleryProductResponse.data);
         setRelatedData(
-          relatedGalleryResponse.data.filter((item) => item.hash !== hash)
+          relatedGalleryResponse.data.filter((item) => item.hash !== hash),
         );
       } catch (error) {
         console.error("Failed to fetch product details:", error);
@@ -105,11 +105,11 @@ const GalleryProduct = () => {
     return (
       <>
         <SEO
-        title={`Gallery Product - Bitcoin-Inspired Masterpiece by 5KSANA`}
-        description={`Explore Gallery Product, a captivating Bitcoin-inspired creation by 5KSANA. This gallery-exclusive piece showcases the perfect blend of blockchain culture and artistic vision. Immerse yourself in the world of crypto art and experience innovation redefined.`}
-        name={`Gallery Product - Bitcoin-Inspired Masterpiece by 5KSANA`}
-        type="page"
-        page={`gallery/${hash}`}
+          title="Gallery Product - Bitcoin-Inspired Masterpiece by 5KSANA"
+          description="Explore Gallery Product by 5KSANA—Bitcoin-inspired art blending blockchain culture with creative vision. Discover exclusive crypto masterpieces today."
+          name="Gallery Product - Bitcoin-Inspired Masterpiece by 5KSANA"
+          type="page"
+          page={`gallery/${hash}`}
         />
         <Loader />
         <div>Loading Gallery Product...</div>
@@ -121,12 +121,12 @@ const GalleryProduct = () => {
     <>
       <SEO
         title={`${data.title} - Bitcoin-Inspired Masterpiece by 5KSANA`}
-        description={`Explore ${data.title}, a captivating Bitcoin-inspired creation by 5KSANA. This gallery-exclusive piece showcases the perfect blend of blockchain culture and artistic vision. Immerse yourself in the world of crypto art and experience innovation redefined.`}
+        description="Explore Gallery Product by 5KSANA—Bitcoin-inspired art blending blockchain culture with creative vision. Discover exclusive crypto masterpieces today."
         name={`${data.title} - Bitcoin-Inspired Masterpiece by 5KSANA`}
         type="page"
         page={`gallery/${hash}`}
       />
-      <div className="w-[100vw] h-full">
+      <section className="w-[100vw] h-full">
         <div className="w-full h-full relative mt-[calc(52px+25px)] xl:mt-[calc(65px+25px)] px-[16px] xl:px-[6.25rem]">
           <div className="w-full h-full relative mt-[25px]">
             <Breadcamp difRoute="Gallery" />
@@ -203,7 +203,7 @@ const GalleryProduct = () => {
         </div>
         <ContactForm />
         <Footer />
-      </div>
+      </section>
 
       <Modal isOpen={originalOpen.state} nopaddings>
         {data.images && originalOpen.state && (

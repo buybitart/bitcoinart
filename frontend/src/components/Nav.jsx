@@ -99,7 +99,7 @@ const Nav = ({ cart, setCart }) => {
           <Link to={"/"} onClick={isBigLaptop ? menuClose : null}>
             <img
               src="/logo.svg"
-              alt=""
+              alt="logo"
               className="h-[28px] w-auto xl:h-full"
               draggable={false}
             />

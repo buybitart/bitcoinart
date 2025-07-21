@@ -32,7 +32,7 @@ const Cart = ({ isCartOpen, cart, setCart, popupClose, popupAuthOpen }) => {
           >
             <img
               src="/close.svg"
-              alt=""
+              alt="close"
               className="w-full h-full object-contain"
               draggable="false"
             />
@@ -64,7 +64,7 @@ const Cart = ({ isCartOpen, cart, setCart, popupClose, popupAuthOpen }) => {
             <div className="w-full h-full flex flex-col gap-2 flex-1 justify-center items-center">
               <img
                 src="/empty-box.svg"
-                alt=""
+                alt="empty-box"
                 className="w-full h-full max-h-[170px] sm:max-h-[225px] object-contain invert opacity-40"
               />
               <p className="font-main sm:text-xl text-lg font-[300] opacity-40">
@@ -76,7 +76,7 @@ const Cart = ({ isCartOpen, cart, setCart, popupClose, popupAuthOpen }) => {
 
         <img
           src="/line.svg"
-          alt=""
+          alt="line"
           className="w-full h-auto object-contain pointer-events-none opacity-40"
           draggable="false"
         />

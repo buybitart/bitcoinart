@@ -226,6 +226,6 @@ Distributed under the **MIT License**. See [LICENSE](https://github.com/buybitar
 - **Aksana (5Ksana)** — Bitcoin Artist & Fashion Designer  
 - Website: [buybitart.com](https://buybitart.com)  
 - GitHub: [buybitart/bitcoinart](https://github.com/buybitart/bitcoinart)  
-- Email: [contact@buybitart.com](mailto:contact@buybitart.com)
+- Email: [info@buybitart.com](mailto:info@buybitart.com)
 
 If you'd like to support the project, please visit the [donation page](https://buybitart.com/support) 

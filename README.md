@@ -228,4 +228,5 @@ Distributed under the **MIT License**. See [LICENSE](https://github.com/buybitar
 - GitHub: [buybitart/bitcoinart](https://github.com/buybitart/bitcoinart)  
 - Email: [info@buybitart.com](mailto:info@buybitart.com)
 
-If you'd like to support the project, please visit the [donation page](https://buybitart.com/support) 
+If you'd like to support the project, please visit the [donation page](https://buybitart.com/support) or [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-coff.ee-yellow)](https://coff.ee/bitcoinart)
+

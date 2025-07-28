@@ -1,6 +1,11 @@
 # BitcoinArt
 
 **An open-source solution giving Bitcoin artists, makers, and independent creators their own customizable, self-hosted website complete with e-commerce and auction tools to showcase and sell handmade, Bitcoin-inspired artworks directly to collectors. Because an independently hosted site is the only place you fully control your content and presentation and the only place immune to deletion or censorship, it becomes your forever home on the web.**
+
+**ARTISTS: STOP BUILDING OTHER PEOPLE’S BUSINESS** https://theabundantartist.com/artists-stop-building-other-businesses/
+
+**Our solution: Your Website is Your Online Home**
+
 ![image](https://github.com/user-attachments/assets/57f6c1dc-3b35-4bfa-a229-512b137d788c)
 ---
 

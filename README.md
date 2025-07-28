@@ -69,7 +69,7 @@ My husband Aliaksandr [GitHub](https://github.com/Berichicko), a few close frien
 
 - **Frontend:** React (Vite), Tailwind CSS  
 - **Backend:** Node.js, Express  
-- **Database:** PostgreSQL  
+- **Database:** MongoDB 
 - **Payments:** BTCPay Server, Stripe  
 - **Containerization:** Docker, Docker Compose  
 
@@ -146,13 +146,31 @@ Sample environment variables:
 
 ```dotenv
 # backend/.env
-PORT=4000
-DATABASE_URL=postgres://user:pass@db:5432/bitcoinart
-BTCPAY_URL=https://your-btcpay-server
-BTCPAY_API_KEY=your_btcpay_api_key
+JWT_ACCESS_SECRET=
+JWT_REFRESH_SECRET=
+API_IMG_KEY=
+API_IMG_URL=
+BD_CONNECTION_STRING=
+BTCPAY_URL=
+BTCPAY_API_KEY=
+BTCPAY_STORE_ID=
+STRIPE_SECRET=
+TELEGRAM_CHAT_ID = 
+TELEGRAM_API = 
+EMAIL_HOST = 
+EMAIL_USER = 
+EMAIL_PASS = 
+CLIENT_URL=
+SERVER_URL=
+NODE_ENV=
 
 # frontend/.env
-VITE_API_BASE_URL=localhost:4000/api
+VITE_DB_LINK=
+VITE_ADMIN_ROUTE=
+VITE_USDBTC_API=
+VITE_CLIENT_URL=
+VITE_GOOGLE_CLIENT_ID=
+VITE_STRIPE_PUBLIC=
 ```
 
 Ensure real credentials are secured and never committed to Git. `.gitignore` excludes all `.env` files by default.

@@ -217,7 +217,9 @@ We align with UNESCO’s definition of **artistic freedom** the right “to imag
 - **Login with NOSTR**  
   Censorship resistant open source communication protocol that is incredibly  
 - **New CMS panel with KeystoneJS**  
-  Self-hosted, open-source headless CMS 
+  Self-hosted, open-source headless CMS
+- **Immersive Technologies**
+  Help artists show their art in a 3D gallery in the browser. Add VR mode and AR preview of artworks on the wall. Keep using the same tools (React/Vite, Node/Express, Docker). 
 
 ---
 

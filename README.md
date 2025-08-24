@@ -258,3 +258,16 @@ Distributed under the **MIT License**. See [LICENSE](https://github.com/buybitar
 
 If you'd like to support the project, please visit the [donation page](https://buybitart.com/support) or [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-coff.ee-yellow)](https://coff.ee/bitcoinart)
 
+**PS On August 23, 2025, my website buybitart.com
+was hit by a big DDoS attack. The type of attack was HTTP/2 Rapid Reset (CVE-2023-44487). In a short time, more than 68 million requests were sent to the site.**
+
+![GzBIv_3WUAIJZdl](https://github.com/user-attachments/assets/729610e9-e4a9-4489-a685-85497839e8a9)
+
+-  https://x.com/5Ksana/status/1959310534534111368
+-  https://x.com/5Ksana/status/1959146923522224612
+-  https://x.com/5Ksana/status/1959217163069239572 
+
+👉 **The protection stopped the request** 💪
+
+**SUPPORT FREEDOM, ART AND TECHNOLOGY!**
+
